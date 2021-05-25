@@ -1,5 +1,5 @@
 # Vertical-Farming
-Go Produce is a online shopping experience geared to individuals looking to purchase produce from their local vertical farm. 
+Go Produce is a online shopping experience geared to consumers looking to purchase produce from their local vertical farm. 
 
 Our Mission: to bring high quality and affordable produce straight to you without any of the in betweens.
 
