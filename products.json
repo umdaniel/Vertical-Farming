@@ -4,64 +4,64 @@
         "sys": { "id": "1" },
         "fields": {
           "title": "lettuce",
-          "price": 2.00,
+          "price": 1.99,
           "image": { "fields": { "file": { "url": "./images/lettuce.jpg" } } }
         }
       },
       {
         "sys": { "id": "2" },
         "fields": {
-          "title": "king panel bed",
-          "price": 12.99,
-          "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+          "title": "tomato",
+          "price": 1.99,
+          "image": { "fields": { "file": { "url": "./images/tomato.jpg" } } }
         }
       },
       {
         "sys": { "id": "3" },
         "fields": {
-          "title": "single panel bed",
-          "price": 12.99,
-          "image": { "fields": { "file": { "url": "./images/product-3.jpeg" } } }
+          "title": "celery",
+          "price": 0.99,
+          "image": { "fields": { "file": { "url": "./images/celery.jpg" } } }
         }
       },
       {
         "sys": { "id": "4" },
         "fields": {
-          "title": "twin panel bed",
-          "price": 22.99,
-          "image": { "fields": { "file": { "url": "./images/product-4.jpeg" } } }
+          "title": "broccoli",
+          "price": 1.99,
+          "image": { "fields": { "file": { "url": "./images/broccoli.jpg" } } }
         }
       },
       {
         "sys": { "id": "5" },
         "fields": {
-          "title": "fridge",
-          "price": 88.99,
-          "image": { "fields": { "file": { "url": "./images/product-5.jpeg" } } }
+          "title": "spinach",
+          "price": 0.99,
+          "image": { "fields": { "file": { "url": "./images/spinach.jpg" } } }
         }
       },
       {
         "sys": { "id": "6" },
         "fields": {
-          "title": "dresser",
-          "price": 32.99,
-          "image": { "fields": { "file": { "url": "./images/product-6.jpeg" } } }
+          "title": "carrot",
+          "price": 1.99,
+          "image": { "fields": { "file": { "url": "./images/carrot.jpg" } } }
         }
       },
       {
         "sys": { "id": "7" },
         "fields": {
-          "title": "couch",
-          "price": 45.99,
-          "image": { "fields": { "file": { "url": "./images/product-7.jpeg" } } }
+          "title": "onion",
+          "price": 1.99,
+          "image": { "fields": { "file": { "url": "./images/onion.jpg" } } }
         }
       },
       {
         "sys": { "id": "8" },
         "fields": {
-          "title": "table",
-          "price": 33.99,
-          "image": { "fields": { "file": { "url": "./images/product-8.jpeg" } } }
+          "title": "bell pepper",
+          "price": 1.99,
+          "image": { "fields": { "file": { "url": "./images/bellpepper.jpg" } } }
         }
       }
     ]
