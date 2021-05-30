@@ -14,6 +14,9 @@ const productsDOM = document.querySelector('.products-center');
 // Cart.
 let cart = [];
 
+// Buttons.
+let buttonsDOM = [];
+
 // Responsible for getting the products.
 class Products {
     // Gets the products from the json file.
@@ -58,11 +61,41 @@ class UI {
         });
         productsDOM.innerHTML = result;
     }
+    getBagButtons() {
+        const buttons = [...document.querySelectorAll(".bag-btn")];
+        buttonsDOM = buttons;
+        buttons.forEach(button => {
+            let id = button.dataset.id;
+            // If the item id matches the id.
+            let inCart = cart.find(item => item.id === id);
+            if (inCart) {
+                button.innerText = "In Cart";
+                button.disabled = true;
+            }
+            button.addEventListener('click', (event) => {
+                event.target.innerText = "In Cart";
+                event.target.disabled = true;
+                // Get product from products.
+                let cartItem = Storage.getProduct(id);
+                // Add product to the cart.
+                // Save the cart to local storage.
+                // Set cart values.
+                // Display cart item.
+                // Show the cart overlay.
+            });
+        });
+    }
 }
 
 // Responsible for local storage.
 class Storage {
-
+    static saveProducts(products) {
+        localStorage.setItem("products", JSON.stringify(products));
+    }
+    static getProduct(id) {
+        let products = JOSN.parse(localStorage.getItem('products'));
+        return products.find(product => product.id === id);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -70,5 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const products = new Products();
 
     // Get all products.
-    products.getProducts().then(products => ui.displayProducts(products));
+    products.getProducts().then(products => { 
+        ui.displayProducts(products);
+        Storage.saveProducts(products);
+    }).then(() => {
+        ui.getBagButtons();
+    });
 });
